@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "product_truth": {
+    "repository": "D:/Code/BMSF-AppQualification",
+    "paths": [
+      "contracts/work/STEP-2A.md"
+    ]
+  },
+  "target": {
+    "repository": "D:/Code/BMSF-AppQualification",
+    "initial_branch": "qualification/step-2a",
+    "initial_head": "PRODUCT_TRUTH_REF"
+  },
+  "work_items": [
+    {
+      "work_id": "QUAL-STEP-2A",
+      "title": "Basic worker happy path",
+      "contract_path": "contracts/work/STEP-2A.md",
+      "dependencies": [],
+      "validation_commands": [
+        {
+          "command": [
+            "pnpm",
+            "exec",
+            "vitest",
+            "run",
+            "tests/step2a-asset-status.test.ts"
+          ]
+        },
+        {
+          "command": [
+            "pnpm",
+            "exec",
+            "tsc",
+            "--noEmit"
+          ]
+        }
+      ],
+      "human_validation_required": true
+    }
+  ]
+}
