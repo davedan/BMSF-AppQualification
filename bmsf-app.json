@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "profile": "bmbos-satellite",
+  "target_repository": ".",
+  "platform_repository": "D:\\Code\\BMBOS",
+  "package_bridge": {
+    "@bmbos/application-contracts": "file:../BMBOS/packages/application-contracts",
+    "@bmbos/application-sdk": "file:../BMBOS/packages/application-sdk",
+    "@bmbos/application-testkit": "file:../BMBOS/packages/application-testkit",
+    "@bmbos/ui": "file:../BMBOS/packages/ui",
+    "@bmbos/ui-foundation": "file:../BMBOS/packages/ui-foundation"
+  },
+  "app": {
+    "key": "bmsf-app-qualification",
+    "name": "BMSF App Qualification",
+    "version": "0.1.0",
+    "description": "Clean-room BMBOS satellite application used to certify BMSF capabilities step by step"
+  },
+  "source_branch": "main",
+  "bootstrap_branch": "bmsf/bootstrap-bmsf-app-qualification",
+  "platform_reference": {
+    "branch": "platform/s12c-satellite-sdk-boundary",
+    "head": "2632c7bbf987a2fd97b52a86f15fe731442747c2"
+  }
+}
