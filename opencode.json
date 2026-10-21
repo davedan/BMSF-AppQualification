@@ -1,24 +1,39 @@
 {
-  "$schema": "https://opencode.ai/config.json",
-  "compaction": {
-    "auto": false
-  },
-  "provider": {
-    "dmr": {
-      "npm": "@ai-sdk/openai-compatible",
-      "name": "Docker Model Runner",
-      "options": {
-        "baseURL": "http://192.168.239.24:12434/v1"
-      },
-      "models": {
-        "huggingface.co/lmstudio-community/gpt-oss-20b-gguf:MXFP4": {
-          "name": "GPT-OSS 20B Local",
-          "limit": {
-            "context": 98304,
-            "output": 4096
-          }
-        }
-      }
-    }
-  }
+    "$schema":  "https://opencode.ai/config.json",
+    "model":  "dmr/huggingface.co/gaianet/qwen3-coder-30b-a3b-instruct-gguf:Q4_K_M",
+    "compaction":  {
+                       "auto":  false
+                   },
+    "provider":  {
+                     "dmr":  {
+                                 "npm":  "@ai-sdk/openai-compatible",
+                                 "name":  "Docker Model Runner",
+                                 "options":  {
+                                                 "baseURL":  "http://192.168.239.24:12434/v1"
+                                             },
+                                 "models":  {
+                                                "devstral-small-2:q4_K_M":  {
+                                                                                "name":  "Devstral Small 2 Local",
+                                                                                "limit":  {
+                                                                                              "context":  32768,
+                                                                                              "output":  4096
+                                                                                          }
+                                                                            },
+                                                "huggingface.co/lmstudio-community/gpt-oss-20b-gguf:MXFP4":  {
+                                                                                                                 "name":  "GPT-OSS 20B Local",
+                                                                                                                 "limit":  {
+                                                                                                                               "context":  98304,
+                                                                                                                               "output":  4096
+                                                                                                                           }
+                                                                                                             },
+                                                "huggingface.co/gaianet/qwen3-coder-30b-a3b-instruct-gguf:Q4_K_M":  {
+                                                                                                                        "name":  "Qwen3 Coder 30B A3B Local",
+                                                                                                                        "limit":  {
+                                                                                                                                      "context":  32768,
+                                                                                                                                      "output":  4096
+                                                                                                                                  }
+                                                                                                                    }
+                                            }
+                             }
+                 }
 }
