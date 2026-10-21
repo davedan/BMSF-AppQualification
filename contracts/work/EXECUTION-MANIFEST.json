@@ -13,7 +13,7 @@
   },
   "work_items": [
     {
-      "work_id": "QUAL-STEP-2A",
+      "work_id": "QUAL-STEP-2A-R1",
       "title": "Basic worker happy path",
       "contract_path": "contracts/work/STEP-2A.md",
       "dependencies": [],
@@ -40,3 +40,4 @@
     }
   ]
 }
+
