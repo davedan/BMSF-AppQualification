@@ -3,20 +3,19 @@
   "product_truth": {
     "repository": "D:/Code/BMSF-AppQualification",
     "paths": [
-      "contracts/work/STEP-2B.md",
-      "tests/step2b-risk-level.test.ts"
+      "contracts/work/STEP-3A.md"
     ]
   },
   "target": {
     "repository": "D:/Code/BMSF-AppQualification",
-    "initial_branch": "qualification/step-2b",
+    "initial_branch": "qualification/step-3a",
     "initial_head": "PRODUCT_TRUTH_REF"
   },
   "work_items": [
     {
-      "work_id": "QUAL-STEP-2B",
-      "title": "Repair failing domain implementation",
-      "contract_path": "contracts/work/STEP-2B.md",
+      "work_id": "QUAL-STEP-3A",
+      "title": "Build multilayer Asset Registry feature",
+      "contract_path": "contracts/work/STEP-3A.md",
       "dependencies": [],
       "validation_commands": [
         {
@@ -25,6 +24,9 @@
             "exec",
             "vitest",
             "run",
+            "tests/step3a-asset-service.test.ts",
+            "tests/step3a-assets-page.test.tsx",
+            "tests/step2a-asset-status.test.ts",
             "tests/step2b-risk-level.test.ts"
           ]
         },
@@ -34,6 +36,14 @@
             "exec",
             "tsc",
             "--noEmit"
+          ]
+        },
+        {
+          "command": [
+            "pnpm",
+            "exec",
+            "vite",
+            "build"
           ]
         }
       ],
