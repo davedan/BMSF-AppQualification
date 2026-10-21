@@ -1,0 +1,24 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "compaction": {
+    "auto": false
+  },
+  "provider": {
+    "dmr": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Docker Model Runner",
+      "options": {
+        "baseURL": "http://192.168.239.24:12434/v1"
+      },
+      "models": {
+        "huggingface.co/lmstudio-community/gpt-oss-20b-gguf:MXFP4": {
+          "name": "GPT-OSS 20B Local",
+          "limit": {
+            "context": 98304,
+            "output": 4096
+          }
+        }
+      }
+    }
+  }
+}
