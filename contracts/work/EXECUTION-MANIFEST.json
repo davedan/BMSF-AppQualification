@@ -8,12 +8,12 @@
   },
   "target": {
     "repository": "D:/Code/BMSF-AppQualification",
-    "initial_branch": "qualification/step-3a",
+    "initial_branch": "qualification/step-3a-qwen25",
     "initial_head": "PRODUCT_TRUTH_REF"
   },
   "work_items": [
     {
-      "work_id": "QUAL-STEP-3A",
+      "work_id": "QUAL-STEP-3A-QWEN25",
       "title": "Build multilayer Asset Registry feature",
       "contract_path": "contracts/work/STEP-3A.md",
       "dependencies": [],
@@ -51,3 +51,4 @@
     }
   ]
 }
+
