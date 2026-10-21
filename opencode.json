@@ -29,7 +29,7 @@
                                                 "huggingface.co/gaianet/qwen3-coder-30b-a3b-instruct-gguf:Q4_K_M":  {
                                                                                                                         "name":  "Qwen3 Coder 30B A3B Local",
                                                                                                                         "limit":  {
-                                                                                                                                      "context":  32768,
+                                                                                                                                      "context":  20480,
                                                                                                                                       "output":  4096
                                                                                                                                   }
                                                                                                                     }
