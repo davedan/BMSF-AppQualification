@@ -1,0 +1,10 @@
+packages:
+  - "."
+allowBuilds:
+  esbuild: true
+overrides:
+  "@bmbos/application-contracts": "file:../BMBOS/packages/application-contracts"
+  "@bmbos/application-sdk": "file:../BMBOS/packages/application-sdk"
+  "@bmbos/application-testkit": "file:../BMBOS/packages/application-testkit"
+  "@bmbos/ui": "file:../BMBOS/packages/ui"
+  "@bmbos/ui-foundation": "file:../BMBOS/packages/ui-foundation"

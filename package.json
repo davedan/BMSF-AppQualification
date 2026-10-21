@@ -1,0 +1,30 @@
+{
+  "name": "bmsf-app-qualification",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "build": "vite build",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "zod": "4.6.7",
+    "@bmbos/application-contracts": "file:../BMBOS/packages/application-contracts",
+    "@bmbos/application-sdk": "file:../BMBOS/packages/application-sdk",
+    "@bmbos/application-testkit": "file:../BMBOS/packages/application-testkit",
+    "@bmbos/ui": "file:../BMBOS/packages/ui",
+    "@bmbos/ui-foundation": "file:../BMBOS/packages/ui-foundation"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "typescript": "5.9.3",
+    "vite": "5.4.21",
+    "vitest": "1.6.1"
+  }
+}
