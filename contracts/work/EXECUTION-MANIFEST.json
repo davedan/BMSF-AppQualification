@@ -3,19 +3,20 @@
   "product_truth": {
     "repository": "D:/Code/BMSF-AppQualification",
     "paths": [
-      "contracts/work/STEP-2A.md"
+      "contracts/work/STEP-2B.md",
+      "tests/step2b-risk-level.test.ts"
     ]
   },
   "target": {
     "repository": "D:/Code/BMSF-AppQualification",
-    "initial_branch": "qualification/step-2a",
+    "initial_branch": "qualification/step-2b",
     "initial_head": "PRODUCT_TRUTH_REF"
   },
   "work_items": [
     {
-      "work_id": "QUAL-STEP-2A-R1",
-      "title": "Basic worker happy path",
-      "contract_path": "contracts/work/STEP-2A.md",
+      "work_id": "QUAL-STEP-2B",
+      "title": "Repair failing domain implementation",
+      "contract_path": "contracts/work/STEP-2B.md",
       "dependencies": [],
       "validation_commands": [
         {
@@ -24,7 +25,7 @@
             "exec",
             "vitest",
             "run",
-            "tests/step2a-asset-status.test.ts"
+            "tests/step2b-risk-level.test.ts"
           ]
         },
         {
@@ -40,4 +41,3 @@
     }
   ]
 }
-
