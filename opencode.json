@@ -18,7 +18,7 @@
         "devstral-small-2:q4_K_M": {
           "name": "Devstral Small 2 Local",
           "limit": {
-            "context": 16384,
+            "context": 32768,
             "output": 4096
           }
         },

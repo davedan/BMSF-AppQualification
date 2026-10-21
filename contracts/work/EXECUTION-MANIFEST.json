@@ -13,7 +13,7 @@
   },
   "work_items": [
     {
-      "work_id": "QUAL-STEP-3A-DEVSTRAL",
+      "work_id": "QUAL-STEP-3A-DEVSTRAL-R1",
       "title": "Build multilayer Asset Registry feature",
       "contract_path": "contracts/work/STEP-3A.md",
       "dependencies": [],
@@ -51,4 +51,5 @@
     }
   ]
 }
+
 
